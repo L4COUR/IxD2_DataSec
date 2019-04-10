@@ -1,7 +1,10 @@
+var video;
+
 function setup() {
-  createCanvas(390, 240);
-  background(51);
-  createCapture(VIDEO);
+  //createCanvas(displayWidth, displayHeight);
+  //background(51);
+  video = createCapture(VIDEO);
+  video.size(displayWidth,displayHeight);
 }
 
 function draw() {
